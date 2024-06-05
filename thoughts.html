@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thoughts - My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="image/ammar.png" alt="Logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="friends.html">Friends</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li class="dropdown">
+                    <a href="gallery.html">Gallery</a>
+                    <div class="dropdown-content">
+                        <a href="gallery.html#dailyLife">Daily Life</a>
+                        <a href="gallery.html#travel">Travel</a>
+                        <a href="gallery.html#hobbies">Hobbies</a>
+                    </div>
+                </li>
+                <li><a href="thoughts.html">Thoughts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="thoughts-banner">
+            <h1>Thoughts & Reflections</h1>
+            <p>A collection of my personal thoughts, reflections, and musings.</p>
+        </section>
+        <section class="thoughts-container">
+            <article class="thought">
+                <h2>Embracing Change</h2>
+                <p class="date">May 28, 2024</p>
+                <p>Change is inevitable in life. Learning to embrace it, rather than resist it, can lead to personal growth and new opportunities...</p>
+                <a href="post1.html" class="read-more">Read more</a>
+            </article>
+            <article class="thought">
+                <h2>The Power of Positivity</h2>
+                <p class="date">May 20, 2024</p>
+                <p>Positivity isn't about ignoring the negatives; it's about focusing on the good and finding strength in difficult times...</p>
+                <a href="post2.html" class="read-more">Read more</a>
+            </article>
+            <article class="thought">
+                <h2>Finding Balance in Life</h2>
+                <p class="date">May 12, 2024</p>
+                <p>Life is a balancing act. Juggling work, family, hobbies, and self-care can be challenging but finding that balance is crucial for a fulfilling life...</p>
+                <a href="post3.html" class="read-more">Read more</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Personal Website. All Rights Reserved.</p>
+        <p>Disclaimer: This is a personal website.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo {
+    max-width: 150px;
+    height: auto;
+    padding: 10px 30px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+header nav ul li .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+header nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* Additions to existing CSS for the Thoughts page */
+.thoughts-banner {
+    background-color: #e2e2e2;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+}
+
+.thoughts-banner h1 {
+    font-size: 2.5em;
+    margin: 0 0 10px;
+}
+
+.thoughts-banner p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.thoughts-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.thought {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.thought h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.thought .date {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.thought p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.thought .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.thought .read-more:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+}
+</style>

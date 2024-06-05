@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - My Personal Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<audio autoplay>
+    <source src="audio\bgmusic.mp3" type="audio/mpeg">
+</audio>
+
+<header>
+    <a href="index.html">
+        <img src="image/ammar.png" alt="Logo" class="logo">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="friends.html">Friends</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li class="dropdown">
+                <a href="gallery.html">Gallery</a>
+                <div class="dropdown-content">
+                    <a href="gallery.html#dailyLife">Daily Life</a>
+                    <a href="gallery.html#travel">Travel</a>
+                    <a href="gallery.html#hobbies">Hobbies</a>
+                </div>
+            </li>
+            <li><a href="thoughts.html">Thoughts</a></li>
+        </ul>
+    </nav>
+</header>
+
+<audio autoplay controls>
+    <source src="audio\bgmusic.mp3" type="audio/mpeg">
+</audio>
+
+<main>
+    <section id="dailyLife">
+        <h2 class="center">Daily Life</h2>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="image/class.jpg" alt="Daily Life Photo 1"></div>
+                <div class="slide"><img src="image/team.jpg" alt="Daily Life Photo 2"></div>
+                <div class="slide"><img src="image/anime.gif" alt="Daily Life Photo 3"></div>
+            </div>
+        </div>
+    </section>
+    <section id="travel">
+        <h2 class="center">Travel</h2>
+        <table class="photo-description">
+            <tr>
+                <td><img src="image/hongkong.jpg" alt="Hong Kong"></td>
+                <td>
+                    <h3>Trip To Hong Kong</h3>
+                    <p>Earlier this year, I traveled to Hong Kong to participate in an international robotics tournament. The event was a thrilling experience, filled with creativity, competition, and collaboration among some of the brightest minds in the field. After the intense days of the tournament, my team and I decided to unwind with a visit to Hong Kong Disneyland.</p>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="image/cave.jpg" alt="Cave"></td>
+                <td>
+                    <h3>Cave Exploration: Gua Gunung Keriang</h3>
+                    <p>As I ventured deeper into the cave, the air grew cooler, and my flashlight flickered ominously. Suddenly, a faint whisper echoed through the darkness, sending shivers down my spine as I realized I wasn't alone. With pounding heart, I stumbled upon an ancient chamber filled with mysterious artifacts, unlocking secrets lost to time.</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id="hobbies">
+        <h2 class="center">Hobbies</h2>
+        <table class="photo-description">
+            <tr>
+                <td><img src="image/UID.jpg" alt="Playing Games"></td>
+                <td>
+                    <h3>Playing Games</h3>
+                    <p>In my spare time, I delve into the immersive worlds of video games, finding solace and excitement in their virtual landscapes. Genshin Impact and Honkai Star Rail are two of my go-to escapes, where I can embark on thrilling adventures and unravel captivating stories. Whether battling formidable foes or exploring breathtaking vistas, gaming fuels my imagination and offers endless entertainment.</p>
+                </td>
+            </tr>
+            <tr>
+                <td><video src="video/volley.mp4" alt="Volleyball" controls></video></td>
+                <td>
+                    <h3>Volleyball</h3>
+                    <p>Volleyball is my passion, and as a middle player, I thrive on the dynamic energy of the game's fast-paced action. Positioned strategically at the heart of the court, I revel in the challenge of both offensive and defensive plays, working tirelessly to block shots and execute powerful spikes. With each set and spike, I feel the rush of adrenaline and the camaraderie of teamwork, making every match an exhilarating experience.</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 My Personal Blog. All Rights Reserved.</p>
+    <p>Disclaimer: This is a personal blog.</p>
+</footer>
+
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo {
+    max-width: 150px;
+    height: auto;
+    padding: 10px 30px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+header nav ul li .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+header nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* Gallery page specific styles */
+.slider {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 800px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.photo-description {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensure table layout is fixed */
+}
+
+.photo-description td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+.photo-description td img, .photo-description td video {
+    width: 100%;
+    max-width: 350px; /* Set max width for images */
+    display: block;
+}
+
+.photo-description td:first-child {
+    width: 350px; /* Set fixed width for image cells */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+</style>
+
+<script>
+// JavaScript for automatic photo slider
+let slideIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+// Initialize first slide as active
+slides[slideIndex].classList.add('active');
+
+function showNextSlide() {
+    slides[slideIndex].classList.remove('active');
+    slideIndex = (slideIndex + 1) % totalSlides;
+    slides[slideIndex].classList.add('active');
+    document.querySelector('.slides').style.transform = `translateX(-${slideIndex * 100}%)`;
+}
+
+setInterval(showNextSlide, 5000);
+</script>
+
+</body>
+</html>

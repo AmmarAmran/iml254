@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies - My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="image/ammar.png" alt="Logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="friends.html">Friends</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li class="dropdown">
+                    <a href="gallery.html">Gallery</a>
+                    <div class="dropdown-content">
+                        <a href="gallery.html#dailyLife">Daily Life</a>
+                        <a href="gallery.html#travel">Travel</a>
+                        <a href="gallery.html#hobbies">Hobbies</a>
+                    </div>
+                </li>
+                <li><a href="thoughts.html">Thoughts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hobbies">
+            <h1>My Hobbies</h1>
+            <div class="hobbies-content">
+                <div class="hobby">
+                    <h2>Playing Games</h2>
+                    <img src="image/genshin.jpg" alt="Gaming" class="hobby-image">
+                    <p>I love immersing myself in the worlds of <strong><a href="https://genshin.hoyoverse.com/en/" target="_blank">Genshin Impact</a></strong> and <strong><a href="https://hsr.hoyoverse.com/en-us/home" target="_blank">Honkai Star Rail</a></strong>. These games offer a unique blend of action, adventure, and strategy, keeping me engaged and entertained. The beautiful graphics and captivating storylines provide a perfect escape from daily life.</p>
+                </div>
+                <div class="hobby">
+                    <h2>Volleyball</h2>
+                    <img src="image/court.jpg" alt="Volleyball" class="hobby-image">
+                    <p>Volleyball is my favorite sport, and I play as a middle player. It helps me stay fit and active, and I enjoy the teamwork and coordination involved. Playing volleyball is not only a great way to stay healthy but also a fantastic way to meet new people and make friends.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Personal Website. All Rights Reserved.</p>
+        <p>Disclaimer: This is a personal website.</p>
+    </footer>
+</body>
+</html>
+
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo {
+    max-width: 150px;
+    height: auto;
+    padding: 10px 30px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+header nav ul li .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+header nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+main .hobbies {
+    padding: 20px;
+    text-align: center;
+}
+
+main .hobbies-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main .hobbies-content .hobby {
+    max-width: 600px;
+    margin: 20px;
+    text-align: left;
+}
+
+main .hobbies-content .hobby h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+main .hobbies-content .hobby p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+main .hobbies-content .hobby-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+}
+</style>

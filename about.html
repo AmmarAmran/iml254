@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="image/ammar.png" alt="Logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="friends.html">Friends</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li class="dropdown">
+                    <a href="gallery.html">Gallery</a>
+                    <div class="dropdown-content">
+                        <a href="gallery.html#dailyLife">Daily Life</a>
+                        <a href="gallery.html#travel">Travel</a>
+                        <a href="gallery.html#hobbies">Hobbies</a>
+                    </div>
+                </li>
+                <li><a href="thoughts.html">Thoughts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <h1>About Me</h1>
+            <div class="about-content">
+                <img src="image/pp.jpg" alt="Profile Picture" class="profile-picture">
+                <div class="about-text">
+                    <h2>Hello! I'm Ammar</h2>
+                    <p>Welcome to my personal website! Here, you'll find a little bit about who I am, what I do, and what I love.</p>
+                    <p>I am passionate about Islam. With a background in Islamic school, I have spent the past 5 years working on improving my knowledge and my attitude. In my spare time, I enjoy volleyball, which help me stay balanced and inspired.</p>
+                    <p>This website is a space where I share my thoughts, experiences, and memories with my family and friends. Feel free to explore the different sections to learn more about my journey, my hobbies, and the people who make my life special.</p>
+                    <p>Thank you for visiting, and I hope you enjoy getting to know me a little better!</p>
+                </div>
+                <video controls class="profile-video">
+                    <source src="video/aboutme.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Personal Website. All Rights Reserved.</p>
+        <p>Disclaimer: This is a personal website.</p>
+    </footer>
+</body>
+</html>
+
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo {
+    max-width: 150px;
+    height: auto;
+    padding: 10px 30px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+header nav ul li .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+header nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+main .about {
+    padding: 20px;
+    text-align: center;
+}
+
+main .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main .about-content .profile-picture {
+    max-width: 200px;
+    height: auto;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+main .about-content .about-text {
+    max-width: 600px;
+    margin: 20px;
+    text-align: left;
+}
+
+main .about-content .about-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+main .about-content .about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+main .about-content .profile-video {
+    max-width: 600px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+}
+</style>

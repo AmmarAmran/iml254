@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family - My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="image/ammar.png" alt="Logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="friends.html">Friends</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li class="dropdown">
+                    <a href="gallery.html">Gallery</a>
+                    <div class="dropdown-content">
+                        <a href="gallery.html#dailyLife">Daily Life</a>
+                        <a href="gallery.html#travel">Travel</a>
+                        <a href="gallery.html#hobbies">Hobbies</a>
+                    </div>
+                </li>
+                <li><a href="thoughts.html">Thoughts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="family">
+            <h1>My Family</h1>
+            <table class="family-table">
+                <tr>
+                    <th>Picture</th>
+                    <th>Name</th>
+                    <th>Relation</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                        <img src="image/abah.jpg" alt="John Doe" class="family-picture">
+                    </td>
+                    <td>Amran</td>
+                    <td>Father</td>
+                    <td rowspan="3">John has worked as a [Occupation] for over [X] years. He enjoys playing golf and has been a great source of inspiration.</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Occupation: Executive Director</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Hobbies: Playing golf</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                        <img src="image/mama.jpg" alt="Jane Doe" class="family-picture">
+                    </td>
+                    <td>Norazmin</td>
+                    <td>Mother</td>
+                    <td rowspan="3">Norazmin is the heart of our family, passionate about teaching and dedicated to be a great teacher.</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Occupation: Teacher</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Hobbies: Teaching</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                        <img src="image/aisyah.jpg" alt="Emma Doe" class="family-picture">
+                    </td>
+                    <td>Aisyah</td>
+                    <td>Sister</td>
+                    <td rowspan="3">Aisyah is a talented student, loves singing, and always eager to learn new things.</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Occupation: Student</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Hobbies: Singing</td>
+                </tr>
+                <!-- Add more family members as needed -->
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Personal Website. All Rights Reserved.</p>
+        <p>Disclaimer: This is a personal website.</p>
+    </footer>
+</body>
+</html>
+
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo {
+    max-width: 150px;
+    height: auto;
+    padding: 10px 30px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+header nav ul li .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+header nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+main .family {
+    padding: 20px;
+    text-align: center;
+}
+
+.family-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.family-table th, .family-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.family-table th {
+    background-color: #f2f2f2;
+}
+
+.family-table .family-picture {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+}
+</style>

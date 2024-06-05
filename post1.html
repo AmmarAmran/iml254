@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embracing Change - Thoughts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="image/ammar.png" alt="Logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="friends.html">Friends</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li class="dropdown">
+                    <a href="gallery.html">Gallery</a>
+                    <div class="dropdown-content">
+                        <a href="gallery.html#dailyLife">Daily Life</a>
+                        <a href="gallery.html#travel">Travel</a>
+                        <a href="gallery.html#hobbies">Hobbies</a>
+                    </div>
+                </li>
+                <li><a href="thoughts.html">Thoughts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="post">
+            <h1>Embracing Change</h1>
+            <p class="date">May 28, 2024</p>
+            <img src="image/embrace.jpg" alt="Embracing Change" class="post-image">
+            <p>Change is inevitable in life. Learning to embrace it, rather than resist it, can lead to personal growth and new opportunities. Often, change can be daunting, filled with uncertainties and the fear of the unknown. However, it is in these moments of transition that we have the opportunity to learn more about ourselves, develop resilience, and discover new paths.</p>
+            <p>Here are a few ways to embrace change positively:</p>
+            <h2>1. Acknowledge Your Feelings</h2>
+            <p>It’s natural to feel apprehensive about change. Acknowledge your emotions without judgment. Understanding how you feel can help you process and move forward more effectively.</p>
+            <h2>2. Stay Open-Minded</h2>
+            <p>Keeping an open mind allows you to see the potential benefits of change. It can lead to new experiences, perspectives, and opportunities that you might have never considered before.</p>
+            <h2>3. Focus on Growth</h2>
+            <p>Every change, whether positive or negative, presents a chance for growth. Reflect on what you can learn from the situation and how it can contribute to your personal development.</p>
+            <h2>4. Take Small Steps</h2>
+            <p>Change doesn’t have to happen all at once. Break it down into smaller, manageable steps. This approach can make the process feel less overwhelming and more achievable.</p>
+            <p>Embracing change is about viewing life as a series of evolving experiences. By adopting a positive mindset and being open to the possibilities that change brings, you can transform challenges into opportunities for growth and self-improvement.</p>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Personal Website. All Rights Reserved.</p>
+        <p>Disclaimer: This is a personal website.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo {
+    max-width: 150px;
+    height: auto;
+    padding: 10px 30px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+header nav ul li .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+header nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* Additions to existing CSS for the post page */
+.post {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post h1 {
+    margin-top: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.post .date {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.post p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.post h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+}
+</style>
